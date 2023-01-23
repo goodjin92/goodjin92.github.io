@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on GOODJIN92.log</title>
-    <link>https://goodjin92.github.io/tags/</link>
-    <description>Recent content in Tags on GOODJIN92.log</description>
+    <title>Posts on GOODJIN92.log</title>
+    <link>https://goodjin92.github.io/posts/</link>
+    <description>Recent content in Posts on GOODJIN92.log</description>
     <image>
       <url>https://goodjin92.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://goodjin92.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Jan 2023 11:30:03 +0000</lastBuildDate><atom:link href="https://goodjin92.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Jan 2023 11:30:03 +0000</lastBuildDate><atom:link href="https://goodjin92.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>blog</title>
-      <link>https://goodjin92.github.io/tags/blog/</link>
+      <title>Hello world</title>
+      <link>https://goodjin92.github.io/posts/hello_world/</link>
       <pubDate>Wed, 18 Jan 2023 11:30:03 +0000</pubDate>
       
-      <guid>https://goodjin92.github.io/tags/blog/</guid>
-      <description></description>
+      <guid>https://goodjin92.github.io/posts/hello_world/</guid>
+      <description>ewafefsdfsdc Text.</description>
     </item>
     
   </channel>
