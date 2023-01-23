@@ -2,24 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://goodjin92.github.io/tags/androidstudio/</loc>
+    <lastmod>2023-01-23T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goodjin92.github.io/categories/</loc>
+    <lastmod>2023-01-23T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goodjin92.github.io/tags/flutter/</loc>
+    <lastmod>2023-01-23T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goodjin92.github.io/categories/flutter/</loc>
+    <lastmod>2023-01-23T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goodjin92.github.io/posts/flutter_androidstudio_install_error/</loc>
+    <lastmod>2023-01-23T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goodjin92.github.io/</loc>
+    <lastmod>2023-01-23T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goodjin92.github.io/posts/</loc>
+    <lastmod>2023-01-23T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://goodjin92.github.io/tags/</loc>
+    <lastmod>2023-01-23T23:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://goodjin92.github.io/tags/blog/</loc>
     <lastmod>2023-01-18T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://goodjin92.github.io/</loc>
+    <loc>https://goodjin92.github.io/categories/blog/</loc>
     <lastmod>2023-01-18T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://goodjin92.github.io/posts/hello_world/</loc>
     <lastmod>2023-01-18T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://goodjin92.github.io/posts/</loc>
-    <lastmod>2023-01-18T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin92.github.io/tags/</loc>
-    <lastmod>2023-01-18T11:30:03+00:00</lastmod>
-  </url><url>
     <loc>https://goodjin92.github.io/archives/</loc>
-  </url><url>
-    <loc>https://goodjin92.github.io/categories/</loc>
   </url><url>
     <loc>https://goodjin92.github.io/search/</loc>
   </url>
