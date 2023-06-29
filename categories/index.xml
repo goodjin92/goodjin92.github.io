@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on GOODJIN.note</title>
-    <link>http://goodjin92.github.io/categories/</link>
+    <link>https://goodjin92.github.io/categories/</link>
     <description>Recent content in Categories on GOODJIN.note</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://goodjin92.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://goodjin92.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
