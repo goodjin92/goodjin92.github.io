@@ -5,7 +5,23 @@
     <link>https://goodjin.kr/tags/docs/</link>
     <description>Recent content in Docs on GOODJIN.note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ko</language>
     <lastBuildDate>Fri, 30 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://goodjin.kr/tags/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docs Test</title>
+      <link>https://goodjin.kr/docs/docs-test/</link>
+      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://goodjin.kr/docs/docs-test/</guid>
+      <description>
+        
+          
+            Docs 문서 테스트입니다.
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>
