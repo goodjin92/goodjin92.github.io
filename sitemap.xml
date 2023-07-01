@@ -3,7 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://goodjin.kr/</loc>
-    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://goodjin.kr/categories/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://goodjin.kr/tags/docs/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://goodjin.kr/categories/docs/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://goodjin.kr/docs/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://goodjin.kr/docs/docs-test/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://goodjin.kr/tags/</loc>
+    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goodjin.kr/archives/</loc>
     <lastmod>2023-06-29T00:00:00+00:00</lastmod>
@@ -17,16 +35,10 @@
     <loc>https://goodjin.kr/categories/blog/</loc>
     <lastmod>2023-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://goodjin.kr/categories/</loc>
-    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://goodjin.kr/post/hello-world/</loc>
     <lastmod>2023-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goodjin.kr/post/</loc>
-    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/tags/</loc>
     <lastmod>2023-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goodjin.kr/search/</loc>
