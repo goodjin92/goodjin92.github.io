@@ -30,6 +30,22 @@ winmail.dat 파일이 첨부된 메일을 Gmail로 전달한다. Gmail로 들어
     </item>
     
     <item>
+      <title>Hugo Blog 만들기</title>
+      <link>https://goodjin.kr/docs/make-hugo-blog/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://goodjin.kr/docs/make-hugo-blog/</guid>
+      <description>
+        
+          
+            Docs 문서 테스트입니다.wdasd
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Docs Test</title>
       <link>https://goodjin.kr/docs/docs-test/</link>
       <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
