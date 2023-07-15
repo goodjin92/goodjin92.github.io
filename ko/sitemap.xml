@@ -2,105 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://goodjin.kr/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+    <loc>https://goodjin.kr/ko/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://goodjin.kr/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://goodjin.kr/"
-                />
-  </url><url>
-    <loc>https://goodjin.kr/categories/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://goodjin.kr/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
                 href="https://goodjin.kr/categories/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://goodjin.kr/ko/categories/"
+                />
   </url><url>
-    <loc>https://goodjin.kr/post/open-dat-file/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/tags/mail/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/post/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/tags/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+    <loc>https://goodjin.kr/ko/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://goodjin.kr/en/tags/"
+                href="https://goodjin.kr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
+                href="https://goodjin.kr/ko/"
+                />
+  </url><url>
+    <loc>https://goodjin.kr/ko/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://goodjin.kr/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://goodjin.kr/ko/series/"
+                />
+  </url><url>
+    <loc>https://goodjin.kr/ko/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
                 href="https://goodjin.kr/tags/"
                 />
-  </url><url>
-    <loc>https://goodjin.kr/tags/tip/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/categories/tip/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/tags/blog/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/categories/blog/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/docs/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/tags/golang/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/tags/hugo/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/docs/make-hugo-blog/</loc>
-    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/tags/docs/</loc>
-    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/categories/docs/</loc>
-    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/docs/docs-test/</loc>
-    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/about/</loc>
-    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/post/hello-world/</loc>
-    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/search/</loc>
-  </url><url>
-    <loc>https://goodjin.kr/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://goodjin.kr/en/series/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://goodjin.kr/series/"
+                href="https://goodjin.kr/ko/tags/"
                 />
   </url>
 </urlset>
