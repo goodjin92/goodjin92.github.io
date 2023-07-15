@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://goodjin.kr/</loc>
-    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://goodjin.kr/categories/</loc>
-    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -27,6 +27,34 @@
                 hreflang="ko"
                 href="https://goodjin.kr/categories/"
                 />
+  </url><url>
+    <loc>https://goodjin.kr/post/open-dat-file/</loc>
+    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://goodjin.kr/tags/mail/</loc>
+    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://goodjin.kr/post/</loc>
+    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://goodjin.kr/tags/</loc>
+    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://goodjin.kr/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://goodjin.kr/tags/"
+                />
+  </url><url>
+    <loc>https://goodjin.kr/tags/tip/</loc>
+    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://goodjin.kr/categories/tip/</loc>
+    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goodjin.kr/tags/docs/</loc>
     <lastmod>2023-06-30T00:00:00+00:00</lastmod>
@@ -40,19 +68,6 @@
     <loc>https://goodjin.kr/docs/docs-test/</loc>
     <lastmod>2023-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://goodjin.kr/tags/</loc>
-    <lastmod>2023-06-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://goodjin.kr/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://goodjin.kr/tags/"
-                />
-  </url><url>
     <loc>https://goodjin.kr/about/</loc>
     <lastmod>2023-06-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -63,9 +78,6 @@
     <lastmod>2023-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goodjin.kr/post/hello-world/</loc>
-    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://goodjin.kr/post/</loc>
     <lastmod>2023-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://goodjin.kr/search/</loc>
