@@ -1,11 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Categories on GOODJIN.note</title>
-    <link>https://goodjin.kr/categories/</link>
-    <description>Recent content in Categories on GOODJIN.note</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://goodjin.kr/categories/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - Category - GOODJIN.note</title>
+        <link>https://goodjin.kr/categories/</link>
+        <description>Categories - Category - GOODJIN.note</description>
+        <generator>Hugo -- gohugo.io</generator><language>ko-KR</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
+            <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Sat, 15 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://goodjin.kr/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Tip</title>
+    <link>https://goodjin.kr/categories/tip/</link>
+    <pubDate>Sat, 15 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>GOODJIN</name>
+    </author><guid>https://goodjin.kr/categories/tip/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Blog</title>
+    <link>https://goodjin.kr/categories/blog/</link>
+    <pubDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>GOODJIN</name>
+    </author><guid>https://goodjin.kr/categories/blog/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Docs</title>
+    <link>https://goodjin.kr/categories/docs/</link>
+    <pubDate>Fri, 30 Jun 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>GOODJIN</name>
+    </author><guid>https://goodjin.kr/categories/docs/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>

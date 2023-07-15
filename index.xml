@@ -1,86 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>GOODJIN.note</title>
-    <link>https://goodjin.kr/</link>
-    <description>Recent content on GOODJIN.note</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://goodjin.kr/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DAT 파일을 여는 방법</title>
-      <link>https://goodjin.kr/post/open-dat-file/</link>
-      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://goodjin.kr/post/open-dat-file/</guid>
-      <description>
-        
-          
-            간혹 업무 중 메일을 받을 때 .dat 파일가 첨부되어 있을 때가 있습니다.
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>GOODJIN.note</title>
+        <link>https://goodjin.kr/</link>
+        <description>GOODJIN.note</description>
+        <generator>Hugo -- gohugo.io</generator><language>ko-KR</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
+            <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Sat, 15 Jul 2023 00:00:00 &#43;0000</lastBuildDate>
+            <atom:link href="https://goodjin.kr/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>DAT 파일을 여는 방법</title>
+    <link>https://goodjin.kr/posts/open-dat-file/</link>
+    <pubDate>Sat, 15 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>GOODJIN</name>
+    </author><guid>https://goodjin.kr/posts/open-dat-file/</guid>
+    <description><![CDATA[간혹 업무 중 메일을 받을 때 .dat 파일가 첨부되어 있을 때가 있습니다.
 아래와 같이 winmail.dat 파일이 첨부되어 있는 경우입니다.
 참고로 저는 다음 메일(Daum Mail) 시스템을 사용중입니다.
 다양한 방법들이 있겠지만, 저는 지메일(Gmail)을 통해 열어봅니다.
 아래 순서대로 따라해보시면 됩니다. 아주 간단합니다.
 winmail.dat 파일이 첨부된 메일을 Gmail로 전달한다. Gmail로 들어가서 해당 메일을 확인한다. 아래 이미지처럼 첨부된 파일을 확인할 수 있다. 위와 같이 첨부된 파일을 확인할 수 있습니다.
-물론 noname 파일이나 다른 첨부파일도 함께 들어있는 경우가 있지만,
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Hugo Blog 만들기</title>
-      <link>https://goodjin.kr/docs/make-hugo-blog/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://goodjin.kr/docs/make-hugo-blog/</guid>
-      <description>
-        
-          
-            Docs 문서 테스트입니다.wdasd
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs Test</title>
-      <link>https://goodjin.kr/docs/docs-test/</link>
-      <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://goodjin.kr/docs/docs-test/</guid>
-      <description>
-        
-          
-            Docs 문서 테스트입니다.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://goodjin.kr/post/hello-world/</link>
-      <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://goodjin.kr/post/hello-world/</guid>
-      <description>
-        
-          
-            안녕하세요.
+물론 noname 파일이나 다른 첨부파일도 함께 들어있는 경우가 있지만,]]></description>
+</item><item>
+    <title>Hugo Blog 만들기</title>
+    <link>https://goodjin.kr/posts/make-hugo-blog/</link>
+    <pubDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>GOODJIN</name>
+    </author><guid>https://goodjin.kr/posts/make-hugo-blog/</guid>
+    <description><![CDATA[Docs 문서 테스트입니다.wdasd]]></description>
+</item><item>
+    <title>Docs Test</title>
+    <link>https://goodjin.kr/posts/docs-test/</link>
+    <pubDate>Fri, 30 Jun 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>GOODJIN</name>
+    </author><guid>https://goodjin.kr/posts/docs-test/</guid>
+    <description><![CDATA[Docs 문서 테스트입니다.]]></description>
+</item><item>
+    <title>Hello World</title>
+    <link>https://goodjin.kr/posts/hello-world/</link>
+    <pubDate>Thu, 29 Jun 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>GOODJIN</name>
+    </author><guid>https://goodjin.kr/posts/hello-world/</guid>
+    <description><![CDATA[안녕하세요.
 블로그의 첫번째 글입니다.
 앞으로 해당 블로그에 코딩 공부하며 배우거나 익힌 것들, 생산성과 관련된 소식이나 정보들, 그리고 제 개인적인 관심들을 정리하고자 합니다.
 우선 여러가지 테스트중이므로, 내용이나 레이아웃 등이 계속 바뀌고 있습니다.
 조만간 양질의 컨텐츠를 공유하겠습니다.
-감사합니다.
-          
-          
-        
-      </description>
-    </item>
-    
-  </channel>
+감사합니다.]]></description>
+</item></channel>
 </rss>

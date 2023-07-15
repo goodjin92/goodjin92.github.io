@@ -1,48 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Blog on GOODJIN.note</title>
-    <link>https://goodjin.kr/categories/blog/</link>
-    <description>Recent content in Blog on GOODJIN.note</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://goodjin.kr/categories/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hugo Blog 만들기</title>
-      <link>https://goodjin.kr/docs/make-hugo-blog/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://goodjin.kr/docs/make-hugo-blog/</guid>
-      <description>
-        
-          
-            Docs 문서 테스트입니다.wdasd
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://goodjin.kr/post/hello-world/</link>
-      <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://goodjin.kr/post/hello-world/</guid>
-      <description>
-        
-          
-            안녕하세요.
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Blog - Category - GOODJIN.note</title>
+        <link>https://goodjin.kr/categories/blog/</link>
+        <description>Blog - Category - GOODJIN.note</description>
+        <generator>Hugo -- gohugo.io</generator><language>ko-KR</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
+            <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://goodjin.kr/categories/blog/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo Blog 만들기</title>
+    <link>https://goodjin.kr/posts/make-hugo-blog/</link>
+    <pubDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>GOODJIN</name>
+    </author><guid>https://goodjin.kr/posts/make-hugo-blog/</guid>
+    <description><![CDATA[Docs 문서 테스트입니다.wdasd]]></description>
+</item><item>
+    <title>Hello World</title>
+    <link>https://goodjin.kr/posts/hello-world/</link>
+    <pubDate>Thu, 29 Jun 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>GOODJIN</name>
+    </author><guid>https://goodjin.kr/posts/hello-world/</guid>
+    <description><![CDATA[안녕하세요.
 블로그의 첫번째 글입니다.
 앞으로 해당 블로그에 코딩 공부하며 배우거나 익힌 것들, 생산성과 관련된 소식이나 정보들, 그리고 제 개인적인 관심들을 정리하고자 합니다.
 우선 여러가지 테스트중이므로, 내용이나 레이아웃 등이 계속 바뀌고 있습니다.
 조만간 양질의 컨텐츠를 공유하겠습니다.
-감사합니다.
-          
-          
-        
-      </description>
-    </item>
-    
-  </channel>
+감사합니다.]]></description>
+</item></channel>
 </rss>

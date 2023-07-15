@@ -1,27 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Hugo on GOODJIN.note</title>
-    <link>https://goodjin.kr/tags/hugo/</link>
-    <description>Recent content in Hugo on GOODJIN.note</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://goodjin.kr/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hugo Blog 만들기</title>
-      <link>https://goodjin.kr/docs/make-hugo-blog/</link>
-      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://goodjin.kr/docs/make-hugo-blog/</guid>
-      <description>
-        
-          
-            Docs 문서 테스트입니다.wdasd
-          
-          
-        
-      </description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Hugo - Tag - GOODJIN.note</title>
+        <link>https://goodjin.kr/tags/hugo/</link>
+        <description>Hugo - Tag - GOODJIN.note</description>
+        <generator>Hugo -- gohugo.io</generator><language>ko-KR</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
+            <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://goodjin.kr/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo Blog 만들기</title>
+    <link>https://goodjin.kr/posts/make-hugo-blog/</link>
+    <pubDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>GOODJIN</name>
+    </author><guid>https://goodjin.kr/posts/make-hugo-blog/</guid>
+    <description><![CDATA[Docs 문서 테스트입니다.wdasd]]></description>
+</item></channel>
 </rss>
