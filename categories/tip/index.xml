@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tip - Category - GOODJIN.note</title>
+        <title>Tip - 분류 - GOODJIN.note</title>
         <link>https://goodjin.kr/categories/tip/</link>
-        <description>Tip - Category - GOODJIN.note</description>
+        <description>Tip - 분류 - GOODJIN.note</description>
         <generator>Hugo -- gohugo.io</generator><language>ko-KR</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
             <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Sat, 15 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://goodjin.kr/categories/tip/" rel="self" type="application/rss+xml" /><item>
     <title>DAT 파일을 여는 방법</title>

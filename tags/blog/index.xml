@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Blog - Tag - GOODJIN.note</title>
+        <title>Blog - 태그 - GOODJIN.note</title>
         <link>https://goodjin.kr/tags/blog/</link>
-        <description>Blog - Tag - GOODJIN.note</description>
+        <description>Blog - 태그 - GOODJIN.note</description>
         <generator>Hugo -- gohugo.io</generator><language>ko-KR</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
             <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://goodjin.kr/tags/blog/" rel="self" type="application/rss+xml" /><item>
     <title>Hugo Blog 만들기</title>

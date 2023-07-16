@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - GOODJIN.note</title>
+        <title>모든 글 - GOODJIN.note</title>
         <link>https://goodjin.kr/posts/</link>
-        <description>All Posts | GOODJIN.note</description>
+        <description>모든 글 | GOODJIN.note</description>
         <generator>Hugo -- gohugo.io</generator><language>ko-KR</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
             <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Sat, 15 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://goodjin.kr/posts/" rel="self" type="application/rss+xml" /></channel>
 </rss>
