@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>create-blog - Series - GOODJIN.note</title>
+        <link>https://goodjin.kr/series/create-blog/</link>
+        <description>create-blog - Series - GOODJIN.note</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
+            <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://goodjin.kr/series/create-blog/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo Blog 만들기</title>
+    <link>https://goodjin.kr/make-hugo-blog/</link>
+    <pubDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>GOODJIN</name>
+    </author><guid>https://goodjin.kr/make-hugo-blog/</guid>
+    <description><![CDATA[블로그 제작법 테스트 글입니다. 앞으로 여기에 글을 추가 작성할 예정입니다.]]></description>
+</item></channel>
+</rss>

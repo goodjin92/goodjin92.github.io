@@ -1,0 +1,8 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Authors - Author - GOODJIN.note</title>
+        <link>https://goodjin.kr/authors/</link>
+        <description>Authors - Author - GOODJIN.note</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
+            <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><atom:link href="https://goodjin.kr/authors/" rel="self" type="application/rss+xml" /></channel>
+</rss>

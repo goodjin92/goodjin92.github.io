@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Tip - 분류 - GOODJIN.note</title>
+        <title>Tip - Category - GOODJIN.note</title>
         <link>https://goodjin.kr/categories/tip/</link>
-        <description>Tip - 분류 - GOODJIN.note</description>
-        <generator>Hugo -- gohugo.io</generator><language>ko-KR</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
+        <description>Tip - Category - GOODJIN.note</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
             <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Sat, 15 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://goodjin.kr/categories/tip/" rel="self" type="application/rss+xml" /><item>
     <title>DAT 파일을 여는 방법</title>
-    <link>https://goodjin.kr/posts/open-dat-file/</link>
+    <link>https://goodjin.kr/open-dat-file/</link>
     <pubDate>Sat, 15 Jul 2023 00:00:00 &#43;0000</pubDate><author>
         <name>GOODJIN</name>
-    </author><guid>https://goodjin.kr/posts/open-dat-file/</guid>
+    </author><guid>https://goodjin.kr/open-dat-file/</guid>
     <description><![CDATA[간혹 업무 중 메일을 받을 때 .dat 파일가 첨부되어 있을 때가 있습니다.
 아래와 같이 winmail.dat 파일이 첨부되어 있는 경우입니다.
 참고로 저는 다음 메일(Daum Mail) 시스템을 사용중입니다.

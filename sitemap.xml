@@ -4,7 +4,7 @@
     ><url>
             <loc>https://goodjin.kr/</loc><lastmod>2023-07-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://goodjin.kr/categories/</loc><lastmod>2023-07-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://goodjin.kr/posts/open-dat-file/</loc><lastmod>2023-07-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://goodjin.kr/open-dat-file/</loc><lastmod>2023-07-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://goodjin.kr/tags/mail/</loc><lastmod>2023-07-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://goodjin.kr/posts/</loc><lastmod>2023-07-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://goodjin.kr/tags/</loc><lastmod>2023-07-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -12,13 +12,12 @@
             <loc>https://goodjin.kr/categories/tip/</loc><lastmod>2023-07-15T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://goodjin.kr/tags/blog/</loc><lastmod>2023-07-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://goodjin.kr/categories/blog/</loc><lastmod>2023-07-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://goodjin.kr/series/create-blog/</loc><lastmod>2023-07-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://goodjin.kr/tags/golang/</loc><lastmod>2023-07-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://goodjin.kr/tags/hugo/</loc><lastmod>2023-07-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://goodjin.kr/posts/make-hugo-blog/</loc><lastmod>2023-07-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://goodjin.kr/tags/docs/</loc><lastmod>2023-06-30T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://goodjin.kr/categories/docs/</loc><lastmod>2023-06-30T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://goodjin.kr/posts/docs-test/</loc><lastmod>2023-06-30T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://goodjin.kr/make-hugo-blog/</loc><lastmod>2023-07-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://goodjin.kr/series/</loc><lastmod>2023-07-01T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
             <loc>https://goodjin.kr/about/</loc><lastmod>2023-06-29T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://goodjin.kr/posts/hello-world/</loc><lastmod>2023-06-29T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://goodjin.kr/search/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://goodjin.kr/hello-world/</loc><lastmod>2023-06-29T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://goodjin.kr/authors/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://goodjin.kr/series/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
