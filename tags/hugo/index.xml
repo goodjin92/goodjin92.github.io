@@ -4,12 +4,18 @@
         <link>https://goodjin.kr/tags/hugo/</link>
         <description>Hugo - Tag - GOODJIN.note</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
-            <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://goodjin.kr/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Thu, 20 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://goodjin.kr/tags/hugo/" rel="self" type="application/rss+xml" /><item>
     <title>Hugo Blog 만들기</title>
     <link>https://goodjin.kr/make-hugo-blog/</link>
-    <pubDate>Sat, 01 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+    <pubDate>Thu, 20 Jul 2023 00:00:00 &#43;0000</pubDate><author>
         <name>GOODJIN</name>
     </author><guid>https://goodjin.kr/make-hugo-blog/</guid>
-    <description><![CDATA[블로그 제작법 테스트 글입니다. 앞으로 여기에 글을 추가 작성할 예정입니다.]]></description>
+    <description><![CDATA[목적개발자가 된다면 나만의 블로그를 개설해봐야지. 라는 막연한 생각으로 시작하게 되었습니다.
+본격적인 개발 공부를 시작하기도 전에 블로그부터 만들게 되었지만&hellip;
+흥미가 있는 것부터 시작하는게 더 좋겠다는 생각으로 블로그를 먼저 만들어봅니다.
+많은 개인 사이트 및 블로그를 생성하는 방법들이 있습니다.
+대표적으로 Static Site 와 Dynamic Site 일텐데, 저는 Static Site 방식을 선택했습니다.
+상대적으로 접근하기 쉽고, 심플한 것이 더 마음에 들어서 선택했습니다.
+Static Site Generators에는 Next.js, Hugo, Gatsby, Jekyll 등 많지만, 저는 Hugo를 선택했습니다.]]></description>
 </item></channel>
 </rss>
