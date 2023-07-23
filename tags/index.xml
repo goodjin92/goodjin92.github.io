@@ -4,24 +4,31 @@
         <link>https://goodjin.kr/tags/</link>
         <description>Tags - Tag - GOODJIN.note</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>exodus0315@outlook.com (GOODJIN)</managingEditor>
-            <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Thu, 20 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://goodjin.kr/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>exodus0315@outlook.com (GOODJIN)</webMaster><lastBuildDate>Sun, 23 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://goodjin.kr/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Blog</title>
     <link>https://goodjin.kr/tags/blog/</link>
-    <pubDate>Thu, 20 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+    <pubDate>Sun, 23 Jul 2023 00:00:00 &#43;0000</pubDate><author>
         <name>GOODJIN</name>
     </author><guid>https://goodjin.kr/tags/blog/</guid>
     <description><![CDATA[]]></description>
 </item><item>
+    <title>GitHub</title>
+    <link>https://goodjin.kr/tags/github/</link>
+    <pubDate>Sun, 23 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+        <name>GOODJIN</name>
+    </author><guid>https://goodjin.kr/tags/github/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Golang</title>
     <link>https://goodjin.kr/tags/golang/</link>
-    <pubDate>Thu, 20 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+    <pubDate>Sun, 23 Jul 2023 00:00:00 &#43;0000</pubDate><author>
         <name>GOODJIN</name>
     </author><guid>https://goodjin.kr/tags/golang/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>Hugo</title>
     <link>https://goodjin.kr/tags/hugo/</link>
-    <pubDate>Thu, 20 Jul 2023 00:00:00 &#43;0000</pubDate><author>
+    <pubDate>Sun, 23 Jul 2023 00:00:00 &#43;0000</pubDate><author>
         <name>GOODJIN</name>
     </author><guid>https://goodjin.kr/tags/hugo/</guid>
     <description><![CDATA[]]></description>

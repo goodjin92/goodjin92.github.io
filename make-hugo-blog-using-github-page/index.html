@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>GitHub Blog Page를 활용한 Hugo Blog 만들기 - GOODJIN.note</title><meta name="Description" content="깃허브 페이지(GitHub Page)를 활용한 휴고 블로그(Hugo Blog) 만들기"><meta property="og:title" content="GitHub Blog Page를 활용한 Hugo Blog 만들기" />
+<meta property="og:description" content="깃허브 페이지(GitHub Page)를 활용한 휴고 블로그(Hugo Blog) 만들기" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://goodjin.kr/make-hugo-blog-using-github-page/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-23T00:00:00+00:00" />
+<meta property="og:see_also" content="https://goodjin.kr/make-hugo-blog-in-local/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GitHub Blog Page를 활용한 Hugo Blog 만들기"/>
+<meta name="twitter:description" content="깃허브 페이지(GitHub Page)를 활용한 휴고 블로그(Hugo Blog) 만들기"/>
+<meta name="application-name" content="GOODJIN.note">
+<meta name="apple-mobile-web-app-title" content="GOODJIN.note">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://goodjin.kr/make-hugo-blog-using-github-page/" /><link rel="prev" href="https://goodjin.kr/make-hugo-blog-in-local/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "GitHub Blog Page를 활용한 Hugo Blog 만들기",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/goodjin.kr\/make-hugo-blog-using-github-page\/"
+        },"image": ["https:\/\/goodjin.kr\/images\/thumbnail.png"],"genre": "posts","keywords": "Blog, Hugo, Golang, GitHub","wordcount":  497 ,
+        "url": "https:\/\/goodjin.kr\/make-hugo-blog-using-github-page\/","datePublished": "2023-07-23T00:00:00+00:00","dateModified": "2023-07-23T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "GOODJIN","logo": "https:\/\/goodjin.kr\/images\/profile.png"},"author": {
+                "@type": "Person",
+                "name": "GOODJIN"
+            },"description": "깃허브 페이지(GitHub Page)를 활용한 휴고 블로그(Hugo Blog) 만들기"
+    }
+    </script><script src="//instant.page/5.2.0" defer type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+</head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="GOODJIN.note"><img
+        class="logo"
+        loading="lazy"
+        src="/images/profile.png"
+        srcset="/images/profile.png, /images/profile.png 1.5x, /images/profile.png 2x"
+        sizes="auto"
+        alt="/images/profile.png"
+        title="/images/profile.png" >GOODJIN.note</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/goodjin92" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="GOODJIN.note"><img
+        class="logo"
+        loading="lazy"
+        src="/images/profile.png"
+        srcset="/images/profile.png, /images/profile.png 1.5x, /images/profile.png 2x"
+        sizes="auto"
+        alt="/images/profile.png"
+        title="/images/profile.png" >GOODJIN.note</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/goodjin92" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#사전준비">사전준비</a></li>
+    <li><a href="#github에-hugo-blog-업로드하기">GitHub에 Hugo Blog 업로드하기</a></li>
+    <li><a href="#이후-진행-순서">이후 진행 순서</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">GitHub Blog Page를 활용한 Hugo Blog 만들기</h1><h2 class="single-subtitle">깃허브 페이지를 활용한 휴고 블로그 만들기</h2><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="https://github.com/goodjin92" title="Author" target="_blank" rel="noopener noreferrer author" class="author">GOODJIN</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/blog/"><i class="far fa-folder fa-fw"></i>Blog</a></span>&nbsp;<span class="post-category">and</span>&nbsp;<span class="post-series">series <a href="/series/create-blog/"><i class="far fa-list-alt fa-fw"></i>create-blog</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-23">2023-07-23</time>&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details series-nav open">
+                                <div class="details-summary series-title">
+                                    <span>Series - create-blog</span>
+                                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                                </div>
+                                <div class="details-content series-content">
+                                    <nav>
+                                        <ul>
+                                                    <li><a href="/make-hugo-blog-in-local/">Hugo Blog 만들기</a></li><li><span class="active">GitHub Blog Page를 활용한 Hugo Blog 만들기</span></li></ul>
+                                    </nav>
+                                </div>
+                            </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#사전준비">사전준비</a></li>
+    <li><a href="#github에-hugo-blog-업로드하기">GitHub에 Hugo Blog 업로드하기</a></li>
+    <li><a href="#이후-진행-순서">이후 진행 순서</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="목적" class="headerLink">
+    <a href="#%eb%aa%a9%ec%a0%81" class="header-mark"></a>목적</h1><p>블로그를 운영하는 것은 내 경험을 정리하기 위한 것이기도 하지만,</p>
+<p>내 경험과 지식을 다른 분들과 나누고 싶기 때문입니다.</p>
+<p>그러려면 당연히 다른 분들이 볼 수 있게 해야겠죠.</p>
+<p>다양한 방식들이 있지만, 저는 깃허브 페이지(GitHub Page)를 활용해보겠습니다.</p>
+<p>참고로, 제가 진행하는 과정에서 문제가 발생했는데 이에 대한 해결과정까지 순서로 넣었습니다.</p>
+<hr>
+<h2 id="사전준비" class="headerLink">
+    <a href="#%ec%82%ac%ec%a0%84%ec%a4%80%eb%b9%84" class="header-mark"></a>1 사전준비</h2><ul>
+<li>
+<p><a href="https://github.com/" target="_blank" rel="noopener noreferrer">깃허브(GitHub)</a>를 활용할 예정이기 때문에 당연히 깃허브 계정 및 레포지토리가 있어야 합니다.</p>
+<p>계정만 미리 생성해주시고 따라해주세요.</p>
+</li>
+</ul>
+</br>
+<h2 id="github에-hugo-blog-업로드하기" class="headerLink">
+    <a href="#github%ec%97%90-hugo-blog-%ec%97%85%eb%a1%9c%eb%93%9c%ed%95%98%ea%b8%b0" class="header-mark"></a>2 GitHub에 Hugo Blog 업로드하기</h2><ol>
+<li>GitHub에 2개의 레포지토리(Repository) 미리 생성하기</li>
+</ol>
+<ul>
+<li>
+<p>저의 경우, 2개의 레포지토리를 생성했습니다.</p>
+<ul>
+<li>
+<p>Blog (Hugo Blog 관련 모든 파일을 저장, 이건 private으로 해도 상관없음)</p>
+</li>
+<li>
+<p>[Github Username].github.io (렌더링한 파일들을 업로드, 실제 사용자가 접근, 공개로 설정)</p>
+</li>
+</ul>
+</li>
+</ul>
+</br>
+<ol start="2">
+<li>Windows Terminal에서 아래 순서대로 입력하며 GitHub에 업로드하기</li>
+</ol>
+<ul>
+<li>아래 코드를 입력하기 전에 blog 폴더에 public 폴더가 있다면, 반드시 삭제하고 진행해주세요.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">init</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">goodjin92</span><span class="p">/</span><span class="n">blog</span><span class="p">.</span><span class="py">git</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">submodule</span> <span class="n">add</span> <span class="n">-b</span> <span class="n">main</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">goodjin92</span><span class="p">/</span><span class="n">goodjin92</span><span class="p">.</span><span class="py">github</span><span class="p">.</span><span class="py">io</span><span class="p">.</span><span class="py">git</span> <span class="n">public</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">-D</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">cd </span><span class="n">public</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">add</span> <span class="p">.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">commit</span> <span class="n">-m</span> <span class="s2">&#34;First Commit&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">main</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">cd </span><span class="p">..</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">add</span> <span class="p">.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></br>
+<ol start="3">
+<li>2번의 마지막 줄 명령어를 작성해보니 아래와 같은 warning, hint 문구가 나타났습니다.</li>
+</ol>
+<ul>
+<li>이번 문제(adding embedded git repository: public)가 발생하지 않는다면 5번으로 넘어가주세요.</li>
+<li>in the working copy of 문제는 다른 방법으로 해결해야 하니, 우선은 넘어가겠습니다.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Project</span><span class="p">\</span><span class="n">blog</span><span class="p">&gt;</span> <span class="n">git</span> <span class="n">add</span> <span class="p">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">warning</span><span class="err">:</span> <span class="k">in</span> <span class="n">the</span> <span class="n">working</span> <span class="nb">copy </span><span class="n">of</span> <span class="s1">&#39;.gitmodules&#39;</span><span class="p">,</span> <span class="n">LF</span> <span class="n">will</span> <span class="n">be</span> <span class="n">replaced</span> <span class="n">by</span> <span class="n">CRLF</span> <span class="n">the</span> <span class="n">next</span> <span class="n">time</span> <span class="n">Git</span> <span class="n">touches</span> <span class="n">it</span>
+</span></span><span class="line"><span class="cl"><span class="n">warning</span><span class="err">:</span> <span class="k">in</span> <span class="n">the</span> <span class="n">working</span> <span class="nb">copy </span><span class="n">of</span> <span class="s1">&#39;archetypes/default.md&#39;</span><span class="p">,</span> <span class="n">LF</span> <span class="n">will</span> <span class="n">be</span> <span class="n">replaced</span> <span class="n">by</span> <span class="n">CRLF</span> <span class="n">the</span> <span class="n">next</span> <span class="n">time</span> <span class="n">Git</span> <span class="n">touches</span> <span class="n">it</span>
+</span></span><span class="line"><span class="cl"><span class="n">warning</span><span class="err">:</span> <span class="k">in</span> <span class="n">the</span> <span class="n">working</span> <span class="nb">copy </span><span class="n">of</span> <span class="s1">&#39;content/posts/hello-world.md&#39;</span><span class="p">,</span> <span class="n">LF</span> <span class="n">will</span> <span class="n">be</span> <span class="n">replaced</span> <span class="n">by</span> <span class="n">CRLF</span> <span class="n">the</span> <span class="n">next</span> <span class="n">time</span> <span class="n">Git</span> <span class="n">touches</span> <span class="n">it</span>
+</span></span><span class="line"><span class="cl"><span class="n">warning</span><span class="err">:</span> <span class="k">in</span> <span class="n">the</span> <span class="n">working</span> <span class="nb">copy </span><span class="n">of</span> <span class="s1">&#39;content/posts/last-year-2022.md&#39;</span><span class="p">,</span> <span class="n">LF</span> <span class="n">will</span> <span class="n">be</span> <span class="n">replaced</span> <span class="n">by</span> <span class="n">CRLF</span> <span class="n">the</span> <span class="n">next</span> <span class="n">time</span> <span class="n">Git</span> <span class="n">touches</span> <span class="n">it</span>
+</span></span><span class="line"><span class="cl"><span class="n">warning</span><span class="err">:</span> <span class="k">in</span> <span class="n">the</span> <span class="n">working</span> <span class="nb">copy </span><span class="n">of</span> <span class="s1">&#39;hugo.toml&#39;</span><span class="p">,</span> <span class="n">LF</span> <span class="n">will</span> <span class="n">be</span> <span class="n">replaced</span> <span class="n">by</span> <span class="n">CRLF</span> <span class="n">the</span> <span class="n">next</span> <span class="n">time</span> <span class="n">Git</span> <span class="n">touches</span> <span class="n">it</span>
+</span></span><span class="line"><span class="cl"><span class="n">warning</span><span class="err">:</span> <span class="n">adding</span> <span class="n">embedded</span> <span class="n">git</span> <span class="n">repository</span><span class="err">:</span> <span class="n">public</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span> <span class="n">You</span><span class="err">&#39;</span><span class="n">ve</span> <span class="n">added</span> <span class="n">another</span> <span class="n">git</span> <span class="n">repository</span> <span class="n">inside</span> <span class="n">your</span> <span class="n">current</span> <span class="n">repository</span><span class="p">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span> <span class="n">Clones</span> <span class="n">of</span> <span class="n">the</span> <span class="n">outer</span> <span class="n">repository</span> <span class="n">will</span> <span class="n">not</span> <span class="n">contain</span> <span class="n">the</span> <span class="n">contents</span> <span class="n">of</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span> <span class="n">the</span> <span class="n">embedded</span> <span class="n">repository</span> <span class="n">and</span> <span class="n">will</span> <span class="n">not</span> <span class="n">know</span> <span class="n">how</span> <span class="n">to</span> <span class="n">obtain</span> <span class="n">it</span><span class="p">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span> <span class="k">If</span> <span class="n">you</span> <span class="n">meant</span> <span class="n">to</span> <span class="n">add</span> <span class="n">a</span> <span class="n">submodule</span><span class="p">,</span> <span class="n">use</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span>   <span class="n">git</span> <span class="n">submodule</span> <span class="n">add</span> <span class="p">&lt;</span><span class="n">url</span><span class="p">&gt;</span> <span class="n">public</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span> <span class="k">If</span> <span class="n">you</span> <span class="n">added</span> <span class="n">this</span> <span class="n">path</span> <span class="n">by</span> <span class="n">mistake</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">remove</span> <span class="n">it</span> <span class="n">from</span> <span class="n">the</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span> <span class="n">index</span> <span class="n">with</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span>   <span class="n">git</span> <span class="nb">rm </span><span class="p">-</span><span class="n">-cached</span> <span class="n">public</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span> <span class="n">See</span> <span class="s2">&#34;git help submodule&#34;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="p">.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></br>
+<ol start="4">
+<li>3번 문제는 아래 명령어를 입력하여 해결하겠습니다.</li>
+</ol>
+<ul>
+<li>아래 명령어 입력 후 fatal log가 뜨더라도 무시하고 5번으로 넘어가겠습니다.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">submodule</span> <span class="n">add</span> <span class="n">-b</span> <span class="n">main</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">goodjin92</span><span class="p">/</span><span class="n">goodjin92</span><span class="p">.</span><span class="py">github</span><span class="p">.</span><span class="py">io</span><span class="p">.</span><span class="py">git</span> <span class="n">public</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></br>
+<ol start="5">
+<li>아래 명령어를 마지막으로 입력한 뒤 GitHub에 접속하여 잘 저장되었는지 확인합니다.</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">commit</span> <span class="n">-m</span> <span class="s2">&#34;First Commit&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">main</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></br>
+<ol start="6">
+<li>조금의 시간이 흐른 뒤 인터넷 주소창에 &ldquo;[Github Username].github.io&quot;를 입력하여 접속해본다.</li>
+</ol>
+</br>
+<hr>
+<h2 id="이후-진행-순서" class="headerLink">
+    <a href="#%ec%9d%b4%ed%9b%84-%ec%a7%84%ed%96%89-%ec%88%9c%ec%84%9c" class="header-mark"></a>3 이후 진행 순서</h2><p>이후부터는 개인 스타일에 맞게 글을 작성하거나 메뉴 구성, 블로그 커스터마이징 등을 수행하시면 됩니다.</p>
+<p>블로그 업데이트 쉽게 하기, 블로그 꾸미기, 댓글 추가, 커스텀 도메인 등록 등에 대해서도 공유하겠습니다.</p>
+</div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-07-23</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://goodjin.kr/make-hugo-blog-using-github-page/" data-title="GitHub Blog Page를 활용한 Hugo Blog 만들기" data-hashtags="Blog,Hugo,Golang,GitHub"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://goodjin.kr/make-hugo-blog-using-github-page/" data-hashtag="Blog"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Evernote" data-sharer="evernote" data-url="https://goodjin.kr/make-hugo-blog-using-github-page/" data-title="GitHub Blog Page를 활용한 Hugo Blog 만들기"><span class="fab fa-evernote fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/blog/">Blog</a>,&nbsp;<a href="/tags/hugo/">Hugo</a>,&nbsp;<a href="/tags/golang/">Golang</a>,&nbsp;<a href="/tags/github/">GitHub</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/make-hugo-blog-in-local/" class="prev" rel="prev" title="Hugo Blog 만들기"><i class="fas fa-angle-left fa-fw"></i>Hugo Blog 만들기</a></div>
+</div>
+<div id="comments"><div id="utterances"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
+            </noscript></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/goodjin92" target="_blank" rel="noopener noreferrer">GOODJIN</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":20},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"","lightTheme":"github-light","repo":"goodjin92/blog-comments"}},"search":{"distance":null,"findAllMatches":null,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":null,"ignoreLocation":null,"isCaseSensitive":null,"location":null,"maxResultLength":10,"minMatchCharLength":null,"noResultsFound":"No results found","snippetLength":30,"threshold":null,"type":"fuse","useExtendedSearch":null},"sharerjs":true,"table":{"sort":true}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript" src="/js/utterances.min.js" defer></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-59CBSMR6BY', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-59CBSMR6BY" async></script></div>
+</body>
+
+</html>

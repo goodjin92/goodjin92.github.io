@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Hugo Blog 만들기 - GOODJIN.note</title><meta name="Description" content="휴고(Hugo)를 활용한 블로그(Blog) 만들기"><meta property="og:title" content="Hugo Blog 만들기" />
+<meta property="og:description" content="휴고(Hugo)를 활용한 블로그(Blog) 만들기" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://goodjin.kr/make-hugo-blog-in-local/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-20T00:00:00+00:00" />
+<meta property="og:see_also" content="https://goodjin.kr/make-hugo-blog-using-github-page/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo Blog 만들기"/>
+<meta name="twitter:description" content="휴고(Hugo)를 활용한 블로그(Blog) 만들기"/>
+<meta name="application-name" content="GOODJIN.note">
+<meta name="apple-mobile-web-app-title" content="GOODJIN.note">
+
+<meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://goodjin.kr/make-hugo-blog-in-local/" /><link rel="prev" href="https://goodjin.kr/open-dat-file/" /><link rel="next" href="https://goodjin.kr/make-hugo-blog-using-github-page/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Hugo Blog 만들기",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/goodjin.kr\/make-hugo-blog-in-local\/"
+        },"image": ["https:\/\/goodjin.kr\/images\/thumbnail.png"],"genre": "posts","keywords": "Blog, Hugo, Golang","wordcount":  447 ,
+        "url": "https:\/\/goodjin.kr\/make-hugo-blog-in-local\/","datePublished": "2023-07-20T00:00:00+00:00","dateModified": "2023-07-20T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": "GOODJIN","logo": "https:\/\/goodjin.kr\/images\/profile.png"},"author": {
+                "@type": "Person",
+                "name": "GOODJIN"
+            },"description": "휴고(Hugo)를 활용한 블로그(Blog) 만들기"
+    }
+    </script><script src="//instant.page/5.2.0" defer type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+</head>
+
+<body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="GOODJIN.note"><img
+        class="logo"
+        loading="lazy"
+        src="/images/profile.png"
+        srcset="/images/profile.png, /images/profile.png 1.5x, /images/profile.png 2x"
+        sizes="auto"
+        alt="/images/profile.png"
+        title="/images/profile.png" >GOODJIN.note</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/goodjin92" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="GOODJIN.note"><img
+        class="logo"
+        loading="lazy"
+        src="/images/profile.png"
+        srcset="/images/profile.png, /images/profile.png 1.5x, /images/profile.png 2x"
+        sizes="auto"
+        alt="/images/profile.png"
+        title="/images/profile.png" >GOODJIN.note</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/goodjin92" title="GitHub" rel="noopener noreferrer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><div class="toc" id="toc-auto">
+        <h2 class="toc-title">Contents</h2>
+        <div class="toc-content" id="toc-content-auto"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#프로그램-설치-및-준비">프로그램 설치 및 준비</a></li>
+    <li><a href="#hugo-blog-생성하기">Hugo Blog 생성하기</a></li>
+  </ul>
+</nav></div>
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Hugo Blog 만들기</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class="author fas fa-user-circle fa-fw"></span><a href="https://github.com/goodjin92" title="Author" target="_blank" rel="noopener noreferrer author" class="author">GOODJIN</a>
+                </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/blog/"><i class="far fa-folder fa-fw"></i>Blog</a></span>&nbsp;<span class="post-category">and</span>&nbsp;<span class="post-series">series <a href="/series/create-blog/"><i class="far fa-list-alt fa-fw"></i>create-blog</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-20">2023-07-20</time>&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details series-nav open">
+                                <div class="details-summary series-title">
+                                    <span>Series - create-blog</span>
+                                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                                </div>
+                                <div class="details-content series-content">
+                                    <nav>
+                                        <ul><li><span class="active">Hugo Blog 만들기</span></li>
+                                                    <li><a href="/make-hugo-blog-using-github-page/">GitHub Blog Page를 활용한 Hugo Blog 만들기</a></li></ul>
+                                    </nav>
+                                </div>
+                            </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#프로그램-설치-및-준비">프로그램 설치 및 준비</a></li>
+    <li><a href="#hugo-blog-생성하기">Hugo Blog 생성하기</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="목적" class="headerLink">
+    <a href="#%eb%aa%a9%ec%a0%81" class="header-mark"></a>목적</h1><p>개발자가 된다면 나만의 블로그를 개설해봐야지. 라는 막연한 생각으로 시작하게 되었습니다.</p>
+<p>본격적인 개발 공부를 시작하기도 전에 블로그부터 만들게 되었지만&hellip;</p>
+<p>흥미가 있는 것부터 시작하는게 더 좋겠다는 생각으로 블로그를 먼저 만들어봅니다.</p>
+</br>
+<p>많은 개인 사이트 및 블로그를 생성하는 방법들이 있습니다.</p>
+<p>대표적으로 Static Site 와 Dynamic Site 일텐데, 저는 Static Site 방식을 선택했습니다.</p>
+<p>상대적으로 접근하기 쉽고, 심플한 것이 더 마음에 들어서 선택했습니다.</p>
+<p>Static Site Generators에는 Next.js, Hugo, Gatsby, Jekyll 등 많지만, 저는 Hugo를 선택했습니다.</p>
+<p>정적 사이트 생성기는 <a href="https://jamstack.org/generators/" target="_blank" rel="noopener noreferrer">JAMSTACK</a>에서 비교해보실 수 있습니다.</p>
+<p>많은 개발 언어나 환경은 잘 모르겠지만, 고랭(Golang)이 뭔가 더 흥미롭고 재밌어 보여서 선택했습니다.</p>
+</br>
+<p>앞으로 블로그를 생성하고 커스터마이징하는 등 좌충우돌 운영기를 작성해보고자 합니다.</p>
+<p>제 기준으로 순서대로 진행해보겠습니다.</p>
+<p>숙련되신 분들이 보기에 답답해보일 수 있으니 주의해주세요&hellip;</p>
+<hr>
+<h2 id="프로그램-설치-및-준비" class="headerLink">
+    <a href="#%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%a8-%ec%84%a4%ec%b9%98-%eb%b0%8f-%ec%a4%80%eb%b9%84" class="header-mark"></a>1 프로그램 설치 및 준비</h2><ol>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git 설치</a></li>
+<li><a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo 설치</a></li>
+<li><a href="https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=ko-kr&amp;gl=kr&amp;rtc=1" target="_blank" rel="noopener noreferrer">Windows Terminal 설치</a></li>
+</ol>
+<ul>
+<li>자세한 설치 과정은 생략하겠습니다. 대부분 확인을 누르면서 그냥 진행하면 됩니다.</li>
+</ul>
+</br>
+<h2 id="hugo-blog-생성하기" class="headerLink">
+    <a href="#hugo-blog-%ec%83%9d%ec%84%b1%ed%95%98%ea%b8%b0" class="header-mark"></a>2 Hugo Blog 생성하기</h2><ol>
+<li>Windows Terminal을 연 뒤 아래 명령어를 입력하여 static site 생성 후 해당 폴더로 이동한다.</li>
+</ol>
+<ul>
+<li>폴더 이름은 &ldquo;blog&quot;로 설정한다. (원하는 이름으로 설정 가능)</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">new</span> <span class="n">site</span> <span class="n">blog</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd </span><span class="n">blog</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></br>
+<ol start="2">
+<li><a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo Themes</a> 사이트에서 원하는 테마 선택 후 아래 명령어를 Windows Terminal에 작성하여 submodule로 테마를 가져온다.</li>
+</ol>
+<ul>
+<li>참고로 저는 <a href="https://themes.gohugo.io/themes/doit/" target="_blank" rel="noopener noreferrer">DoIt</a> 테마를 선택해서 사용중입니다.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">init</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">submodule</span> <span class="n">add</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="nb">HEIGE-PCloud</span><span class="p">/</span><span class="n">DoIt</span><span class="p">.</span><span class="py">git</span> <span class="n">themes</span><span class="p">/</span><span class="n">DoIt</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></br>
+<ol start="3">
+<li>Blog 폴더에 있는 hugo.toml 파일을 아래와 같이 수정한다. toml 파일은 <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VSCode</a>, <a href="https://typora.io/" target="_blank" rel="noopener noreferrer">Typora</a> 등 에디터를 활용하여 수정한다.</li>
+</ol>
+<ul>
+<li>기존</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;http://example.org/&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">languageCode</span> <span class="p">=</span> <span class="s1">&#39;en-us&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;My New Hugo Site&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>수정 후</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;http://goodjin92.github.io/&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">languageCode</span> <span class="p">=</span> <span class="s1">&#39;en-us&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;GOODJIN.note&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">theme</span> <span class="p">=</span> <span class="s1">&#39;DoIt&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></br>
+<ol start="4">
+<li><a href="https://hugodoit.pages.dev/theme-documentation-basics/" target="_blank" rel="noopener noreferrer">DoIt 테마 가이드</a>에 따라 원하는대로 블로그를 커스터마이징한다.</li>
+</ol>
+<ul>
+<li>Hugo는 overriding을 지원하기 때문에 굳이 themes 폴더 안의 파일들을 건드릴 필요는 없습니다.</li>
+<li>선택한 테마에 따라 개발자가 테마 활용 가이드를 함께 업로드해둡니다. 가이드만 잘 따라해봅니다.</li>
+<li>제 기준으로, blog\themes\DoIt\exampleSite 폴더를 참고하여 블로그를 꾸몄습니다.</li>
+<li>위 exampleSite 폴더를 참고하여 blog\config\_default 폴더에 params.toml를 만들어 작성했습니다.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># website title</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;GOODJIN.note&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">description</span> <span class="p">=</span> <span class="s2">&#34;This is GOODJIN&#39;s Blog like a note.&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">keywords</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;GOODJIN&#34;</span><span class="p">,</span> <span class="s2">&#34;Coding&#34;</span><span class="p">,</span> <span class="s2">&#34;Programming&#34;</span><span class="p">,</span> <span class="s2">&#34;IT&#34;</span><span class="p">,</span> <span class="s2">&#34;Tip&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># DoIt theme version</span>
+</span></span><span class="line"><span class="cl"><span class="nx">version</span> <span class="p">=</span> <span class="s2">&#34;0.3.X&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># site default theme (&#34;light&#34;, &#34;dark&#34;, &#34;black&#34;, &#34;auto&#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">defaultTheme</span> <span class="p">=</span> <span class="s2">&#34;auto&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># 아래에 코드들이 아주 많이 있습니다. 위에 설명대로 테마 가이드 혹은 exampleSite 샘플을 참고해서 작성합니다.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></br>
+<ol start="5">
+<li>Windows Terminal에서 아래 명렁어 입력 후 새 포스트를 만든다.</li>
+</ol>
+<ul>
+<li>content 폴더 안에 posts 폴더가 생기고, 그 폴더 안에 hello-world.md 라는 파일이 생성된다.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">new</span> <span class="n">posts</span><span class="p">/</span><span class="nb">hello-world</span><span class="p">.</span><span class="nb">md
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></br>
+<ol start="6">
+<li>테마 가이드에 따라 config.toml 수정, 포스트 작성 등 일부 작업 수행 후 Windows Terminal에서 아래 명령어를 작성하여 실행한다.</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">serve</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></br>
+<ol start="7">
+<li>
+<p>웹 브라우저 주소창에 localhost:1313 입력 후 열리는지 확인한다.</p>
+</br>
+</li>
+<li>
+<p>잘 실행되는 것을 확인했다면 테마 가이드를 참고하여 더 다양하게 응용해본다.</p>
+</li>
+</ol>
+</br>
+<p>현재는 로컬 환경에서 블로그가 잘 실행되는 것을 확인했습니다.</p>
+<p>조만간 깃허브(GitHub)를 활용하여 외부에서 다른 사용자들도 접속할 수 있는 진짜 블로그 운영법을 소개하겠습니다.</p>
+</div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-07-20</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"><button title="Share on Twitter" data-sharer="twitter" data-url="https://goodjin.kr/make-hugo-blog-in-local/" data-title="Hugo Blog 만들기" data-hashtags="Blog,Hugo,Golang"><span class="fab fa-twitter fa-fw"></span></button><button title="Share on Facebook" data-sharer="facebook" data-url="https://goodjin.kr/make-hugo-blog-in-local/" data-hashtag="Blog"><span class="fab fa-facebook-square fa-fw"></span></button><button title="Share on Evernote" data-sharer="evernote" data-url="https://goodjin.kr/make-hugo-blog-in-local/" data-title="Hugo Blog 만들기"><span class="fab fa-evernote fa-fw"></span></button></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/blog/">Blog</a>,&nbsp;<a href="/tags/hugo/">Hugo</a>,&nbsp;<a href="/tags/golang/">Golang</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/open-dat-file/" class="prev" rel="prev" title="DAT 파일을 여는 방법"><i class="fas fa-angle-left fa-fw"></i>DAT 파일을 여는 방법</a>
+            <a href="/make-hugo-blog-using-github-page/" class="next" rel="next" title="GitHub Blog Page를 활용한 Hugo Blog 만들기">GitHub Blog Page를 활용한 Hugo Blog 만들기<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="utterances"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
+            </noscript></div></article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/goodjin92" target="_blank" rel="noopener noreferrer">GOODJIN</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":20},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"","lightTheme":"github-light","repo":"goodjin92/blog-comments"}},"search":{"distance":null,"findAllMatches":null,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":null,"ignoreLocation":null,"isCaseSensitive":null,"location":null,"maxResultLength":10,"minMatchCharLength":null,"noResultsFound":"No results found","snippetLength":30,"threshold":null,"type":"fuse","useExtendedSearch":null},"sharerjs":true,"table":{"sort":true}};</script><script type="text/javascript" src="/lib/tablesort/tablesort.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript" src="/js/utterances.min.js" defer></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-59CBSMR6BY', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-59CBSMR6BY" async></script></div>
+</body>
+
+</html>
